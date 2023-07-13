@@ -1,0 +1,15 @@
+.text-danger {
+    font-size: 14px;
+}
+
+button.btn-primary:not([disabled]),
+button.btn-primary:not([disabled]):active,
+button.btn-primary:not([disabled]):focus {
+    background-color: #faefcf; /* Color celeste */
+}
+
+button.btn-primary[disabled],
+button.btn-primary[disabled]:active,
+button.btn-primary[disabled]:focus {
+    background-color: #6c757d; /* Color gris */
+}

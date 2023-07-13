@@ -1,0 +1,20 @@
+
+<header class="header ">
+    <h1 class="header_h1 d-flex justify-content-start mx-5">
+        <a href="#" class="header_a" routerLink="/Home">Tómate un Breaky...</a>
+    </h1>
+        <button (click)="setActive()" class="header_button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="header_svg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+
+    <nav class="header_nav" [ngClass]="{'header_nav--activo':active}" >
+        <ul class="header_ul d-flex justify-content-end">
+                <li class="header_li"><a href="#" class="header_a" routerLink="/">Home</a></li>
+                <li class="header_li"><a href="#" class="header_a" routerLink="/Register">Registrate</a></li>
+                <li class="header_li"><a href="#" class="header_a" routerLink="/Login">Loggeate</a></li>
+            </ul>
+        </nav>
+    </header>
+<router-outlet></router-outlet>

@@ -1,0 +1,50 @@
+.give{
+    height: 120px;
+    width: 120px;
+}
+.new-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* adjust this value to move the button lower */
+}
+.team{
+    height: 200px;
+    width: 220px;
+}
+#provedores{
+    background-color: #9EF2AE;
+}
+#fondo{
+    background-color: #faefcf;
+}
+#logoMain{
+    height: 375px;
+    width: 400px;
+}
+
+.carousel-caption {
+    color: black;
+}
+p{
+    font-size: 20px;
+}
+
+.slide-1{
+    background-color: #F4D03F;
+}
+.slide-2{
+    background-color: pink;
+}
+.slide-3{
+    background-color: #74D3E4;
+}
+.slide-4{
+    background-color: #D7BDE2;
+}
+.slide-5{
+    background-color: #9EF2AE;
+}
+.slide-6{
+    background-color: #E2866B;
+}

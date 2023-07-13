@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+</head>
+<body id="fondo">
+<div class="container p-5" >
+    <div class="row align-items-center ">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <img id="logoMain" src="assets/img/logobreakysimple.png" alt="Breaky Foods" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <h1>Breaky Foods</h1>
+            <h2 class="mb-4">Comer sano, ahora es más facil</h2>
+            <form action="#">
+                <div class="mb-3 input-group">
+                    <input type="number" class="form-control" placeholder="Ingresa tu código postal" aria-label="Ingresa tu código postal"
+                           aria-describedby="button-addon2">
+                    <button class="btn btn-primary" type="submit" id="button-addon2">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- CAROUSEL -->
+<div class="carousel-container">
+    <ngb-carousel *ngIf="images" class="w-100 mx-auto">
+        <ng-template ngbSlide >
+            <div class="picsum-img-wrapper d-flex justify-content-center slide-1">
+                <img [src]="images[0]" alt="Random first slide " class="w-50" />
+            </div>
+            <div class="carousel-caption">
+                <h3>Croissants frescos y deliciosos</h3>
+                <p>Disfruta de los clasicos de toda la vida ¡o personalízalos con chocolate, crema o mermelada!</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper d-flex justify-content-center slide-2">
+                <img [src]="images[1]" alt="Random second slide" class="w-50" />
+            </div>
+            <div class="carousel-caption">
+                <h3>Jamón ibérico de calidad</h3>
+                <p>Seleccionamos las mejores paletas para tí</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper d-flex justify-content-center slide-3">
+                <img [src]="images[2]" alt="Random third slide" class="w-50" />
+            </div>
+            <div class="carousel-caption">
+                <h3>Naranjas jugozas y de proximidad</h3>
+                <p>Las mejores que conseguirás sin tener que moverte</p>
+            </div>
+        </ng-template>
+
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper d-flex justify-content-center slide-4">
+                <img [src]="images[3]" alt="Random third slide" class="w-50" />
+            </div>
+            <div class="carousel-caption">
+                <h3>El capricho de la abuelita, ahora a sólo un click</h3>
+                <p>No te preocupes por la cantidad, ya luego haces dieta</p>
+            </div>
+        </ng-template>
+
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper d-flex justify-content-center slide-5">
+                <img [src]="images[4]" alt="Random third slide" class="w-50" />
+            </div>
+            <div class="carousel-caption">
+                <h3>Plátano canario</h3>
+                <p>Nos contó un pajarito que no has comido suficiente fruta hoy...</p>
+            </div>
+        </ng-template>
+
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper d-flex justify-content-center slide-6">
+                <img [src]="images[5]" alt="Random third slide" class="w-50" />
+            </div>
+            <div class="carousel-caption">
+                <h3>Chapata con jamón</h3>
+                <p>Cuida de este bocadillo, nos comentan que suelen robarlo los compañeros</p>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>
+<!-- fin carousel-->
+
+<!-- Items CEO -->
+<div class="container-fluid p-3" id="ofrecer" >
+    <div class=" d-flex justify-content-around">
+        <div class="col-md-3 text-center">
+            <img src="/assets/img/personaliza.png" class="give" alt="personalizacion pedido delivery comida nutritiva">
+            <h5 class="text-center">Personaliza<br>añade más de lo que sea</h5>
+
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="/assets/img/panadero.png" class="give" alt="sabor tradicional alimentos pan">
+            <h5 class="text-center">Disfruta del <br>sabor tradicional</h5>
+
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="/assets/img/delivery.png" class="give" alt="diferencia repartidores bien cuidados falsos autonomos">
+            <h5 class="text-center">Cuidamos a <br> nuestros repartidores</h5>
+        </div>
+    </div>
+
+</div>
+
+<!--Proveedores-->
+<div class="container-fluid p-3" id="provedores">
+    <h1>Nuestro equipo</h1>
+    <div class="row">
+        <div class="col-md-6 mt-4">
+            <img src="assets/img/cristobal.png" style="width: 100%; max-width: 400px;" alt="logo panaderia proveedor">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+            <p>Panadería tradicional ubicada en Sabadell. Cuenta con un amplio catálogo de productos y más por encargo.
+            Elaboran sus panes y pasteles con productos ecológicos y con técnicas tradicionales. Sabor inigualable y calidad.</p>
+        </div>
+    </div>
+</div>
+<!-- fin proveedores-->
+
+<!-- Inicio redirección a login -->
+<div class="container-fluid p-3" id="colabora">
+    <h1 class="text-center">Se parte del team</h1>
+    <div class=" d-flex justify-content-around mt-3">
+        <div class="col-md-3 text-center">
+            <img src="/assets/img/delivery.png" class="team">
+            <h5 class="text-center">Como repartidor...<br> saca un extra en las horas que puedas sin hacerte autonomo</h5>
+        </div>
+        <!-- Add new div with button here -->
+        <div class="col-md-3 text-center new-button-container">
+            <button type="button" class="btn btn-outline-dark" routerLink="/Register">Únete</button>
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="/assets/img/panaderia.JPG" class="team">
+            <h5 class="text-center">Como comercio...<br>¿Quieres vender más?<br>con nosotros lo lograrás</h5>
+        </div>
+    </div>
+</div>
+<!-- fin redirección a login -->
+</body>
+</html>
